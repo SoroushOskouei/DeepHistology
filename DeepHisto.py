@@ -80,56 +80,17 @@ tutheight = 0
 tutbutclose = st.button('Hide tutorial')
 
 if tutbut and tut==0:
-    tutheight = 500
+    vidtut = open('myvideo.mp4', 'rb')
+    video_bytes = vidtut.read()
+    st.video(video_bytes)
     tut = 1
     # print(tutheight)
 
 if tutbutclose and tut==1:
-    tutheight = 0
     tut = 0
+    vidtut.empty()
     # print(tutheight)
 
-components.html(
-"""
-    <style>
-        .accordion {
-          background-color: #eee;
-          color: #444;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-          transition: 0.4s;
-        }
-        
-        .active, .accordion:hover {
-          background-color: #ccc; 
-        }
-        
-        .panel {
-          padding: 0 18px;
-          background-color: rgb(150, 150, 150);
-          overflow: hidden;
-          transition: 1s;
-          height:0px;
-
-        }
-    </style>
-</head>
-<body>
-    
-        
-        
-<video style="margin-top:10px; margin-left:20px;" width="800" height="400" controls>
-<source src="https://www.youtube.com/watch?v=kXvmqg8hc70" type="video/mp4">
-</video>
-
-
-""", height = tutheight
-)
 
 
 
