@@ -80,7 +80,7 @@ tutheight = 0
 tutbutclose = st.button('Hide tutorial')
 
 if tutbut and tut==0:
-    vidtut = open('myvideo.mp4', 'rb')
+    vidtut = open('tut.mp4', 'rb')
     video_bytes = vidtut.read()
     st.video(video_bytes)
     tut = 1
