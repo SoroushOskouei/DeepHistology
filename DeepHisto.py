@@ -5,8 +5,8 @@ from fastai.vision import *
 import streamlit.components.v1 as components
 
 import PIL
-import torch
-import torchvision
+#import torch
+#import torchvision
 
 import cv2
 from PIL import Image
