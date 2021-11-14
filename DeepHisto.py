@@ -124,7 +124,7 @@ components.html(
         
         
 <video style="margin-top:10px; margin-left:20px;" width="800" height="400" controls>
-<source src="./tut.mp4" type="video/mp4">
+<source src="https://share.streamlit.io/soroushoskouei/deephistology/tut.mp4" type="video/mp4">
 </video>
 
 
