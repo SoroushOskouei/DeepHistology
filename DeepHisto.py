@@ -656,8 +656,7 @@ if uploaded_file is not None:
                     st.markdown(original_title, unsafe_allow_html=True)
                 elif probebs[0]<0.8 or probebs[1]<0.8:
                     original_title = '<p style="color:Yellow">Predicted: </p>' + str(label[0])
-                    st.markdown(original_title, unsafe_allow_html=True)  
-                gif_runner.empty()
+                    st.markdown(original_title, unsafe_allow_html=True)
 
                 if str(label[0]) == 'notMild':
                     st.write("Classifying...")
